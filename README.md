@@ -22,7 +22,7 @@
 Решение:
 
 Сначала создадим таблицы:
-<p style="border:2px solid #555; box-shadow:3px 3px 5px #999; width: 200px; text-align:center;  margin:20px; padding:20px;" >
+
 CREATE TABLE Product (
     id INT PRIMARY KEY,
     name TEXT
@@ -37,7 +37,8 @@ CREATE TABLE ProductsCategories (
     productId INT FOREIGN KEY REFERENCES Product (id),
     categoryId INT FOREIGN KEY REFERENCES Categories (id)
     PRIMARY KEY (productID, categoryId)
-)</p>
+)
+
 Затем наполним их значениями:
 INSERT INTO Product
 VALUES
