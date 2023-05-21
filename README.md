@@ -22,7 +22,7 @@
 <b>Решение:</b>
 
 Создадим таблицы:
-<pre class="notranslate">
+<pre>
 CREATE TABLE Product (
     id INT PRIMARY KEY,
     name TEXT
