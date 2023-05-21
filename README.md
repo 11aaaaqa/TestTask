@@ -28,12 +28,10 @@
     id INT PRIMARY KEY,
     name TEXT
 )
-
 CREATE TABLE Categories (
     id INT PRIMARY KEY,
     name TEXT
 )
-
 CREATE TABLE ProductsCategories (
     productId INT FOREIGN KEY REFERENCES Product (id),
     categoryId INT FOREIGN KEY REFERENCES Categories (id)
