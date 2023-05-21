@@ -20,9 +20,12 @@
 выводиться.
 
 Решение:
-
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto>
+<pre class="notranslate">
 Создадим таблицы:
 CREATE TABLE Product (
     id INT PRIMARY KEY,
     name TEXT
 )
+</pre>
+</div>
