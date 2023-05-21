@@ -29,7 +29,6 @@
 ) 
 </code>
 </pre>
-
 <pre class="notranslate">
 <code>
 CREATE TABLE Categories (
@@ -38,7 +37,6 @@ CREATE TABLE Categories (
 )
 </code>
 </pre>
-
 <pre class="notranslate">
 <code>
 CREATE TABLE ProductsCategories (
