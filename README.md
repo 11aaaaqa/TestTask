@@ -39,7 +39,7 @@ CREATE TABLE ProductsCategories (
 </pre>
 
 Наполним таблицы значениями:
-<pre class="notranslate">
+<pre>
 INSERT INTO Product
 VALUES
     (1, Apple),
@@ -58,7 +58,7 @@ VALUES
 </pre>
 
 Сам SQL-запрос:
-<pre class="nontranslate">
+<pre>
 SELECT Product.name, Categories.name
 FROM Product 
 LEFT JOIN ProductsCategories ON ProductsCategories.productId = Product.id
