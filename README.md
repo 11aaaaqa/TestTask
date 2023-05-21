@@ -40,7 +40,6 @@ CREATE TABLE ProductsCategories (
 </code>
 </pre>
 </div>
->
 
 Создадим таблицы:
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto>
@@ -50,12 +49,10 @@ VALUES
     (1, Apple),
     (2, Koenigsegg),
     (3, Tom)
-
 INSERT INTO Categories
 VALUES
     (1, Cars),
     (2, Books)
-
 INSERT INTO ProductsCategories
 VALUES
     (2, 1),
