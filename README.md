@@ -23,7 +23,7 @@
 
 Создадим таблицы:
 <pre class="notranslate">
-<code>CREATE TABLE Product (
+CREATE TABLE Product (
     id INT PRIMARY KEY,
     name TEXT
 ) 
@@ -36,12 +36,11 @@ CREATE TABLE ProductsCategories (
     categoryId INT FOREIGN KEY REFERENCES Categories (id)
     PRIMARY KEY (productID, categoryId)
 )
-</code>
 </pre>
 
 Наполним таблицы значениями:
 <pre class="notranslate">
-<code>INSERT INTO Product
+INSERT INTO Product
 VALUES
     (1, Apple),
     (2, Koenigsegg),
@@ -56,7 +55,6 @@ INSERT INTO ProductsCategories
 VALUES
     (2, 1),
     (3, 2)
-</code>
 </pre>
 
 Сам SQL-запрос:
