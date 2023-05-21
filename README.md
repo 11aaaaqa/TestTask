@@ -58,3 +58,11 @@ VALUES
     (3, 2)
 </code>
 </pre>
+
+Сам SQL-запрос:
+<pre class="nontranslate">
+SELECT Product.name, Categories.name
+FROM Product 
+LEFT JOIN ProductsCategories ON ProductsCategories.productId = Product.id
+LEFT JOIN Categories ON ProductsCategories.categoryId = Categories.id
+</pre>
