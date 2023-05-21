@@ -1,37 +1,20 @@
-CREATE TABLE Product (
-    id INT PRIMARY KEY,
-    name TEXT
-)
+<b>Задание:</b>
 
-CREATE TABLE Categories (
-    id INT PRIMARY KEY,
-    name TEXT
-)
+Напишите на C# библиотеку для поставки внешним клиентам, которая умеет вычислять площадь круга по радиусу и треугольника по трем сторонам.
+Дополнительно к работоспособности оценим:
 
-CREATE TABLE ProductsCategories (
-    productId INT FOREIGN KEY REFERENCES Product (id),
-    categoryId INT FOREIGN KEY REFERENCES Categories (id)
-    PRIMARY KEY (productID, categoryId)
-)
+- Юнит-тесты
 
-INSERT INTO Product
-VALUES
-    (1, Apple),
-    (2, Koenigsegg),
-    (3, Tom)
+- Легкость добавления других фигур
 
-INSERT INTO Categories
-VALUES
-    (1, Cars),
-    (2, Books)
+- Вычисление площади фигуры без знания типа фигуры в compile-time
 
-INSERT INTO ProductsCategories
-VALUES
-    (2, 1),
-    (3, 2)
+- Проверку на то, является ли треугольник прямоугольным
 
 
-SELECT Product.name, Categories.name
-FROM Product 
-LEFT JOIN ProductsCategories ON ProductsCategories.productId = Product.id
-LEFT JOIN Categories ON ProductsCategories.categoryId = Categories.id
+
+<b>Задание 2:</b>
+
+В базе данных MS SQL Server есть продукты и категории. Одному продукту может соответствовать много категорий, в одной категории может быть много
+продуктов. Напишите SQL запрос для выбора всех пар «Имя продукта – Имя категории». Если у продукта нет категорий, то его имя все равно должно
+выводиться.
