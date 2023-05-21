@@ -40,8 +40,9 @@ CREATE TABLE ProductsCategories (
 </code>
 </pre>
 </div>
-Наполним таблицы значениями:
-                        
+>
+
+Создадим таблицы:
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto>
 <pre class="notranslate">
 <code>INSERT INTO Product
@@ -49,10 +50,12 @@ VALUES
     (1, Apple),
     (2, Koenigsegg),
     (3, Tom)
+
 INSERT INTO Categories
 VALUES
     (1, Cars),
     (2, Books)
+
 INSERT INTO ProductsCategories
 VALUES
     (2, 1),
