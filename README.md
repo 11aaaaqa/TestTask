@@ -39,8 +39,7 @@ CREATE TABLE ProductsCategories (
 </code>
 </pre>
 
-Создадим таблицы:
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto>
+Наполним таблицы значениями:
 <pre class="notranslate">
 <code>INSERT INTO Product
 VALUES
@@ -59,4 +58,3 @@ VALUES
     (3, 2)
 </code>
 </pre>
-</div>
