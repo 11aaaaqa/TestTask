@@ -58,7 +58,7 @@ namespace Tests
         }
 
         [Test]
-        public void Square_2and4and5_3dot8Returned()
+        public void Square_2and4and5_3point8Returned()
         {
             //arrange
             double expected = 3.8d;

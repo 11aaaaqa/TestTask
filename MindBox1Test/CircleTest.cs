@@ -7,7 +7,7 @@ namespace Tests
     {
 
         [Test]
-        public void Square_10_314dot16Returned()
+        public void Square_10_314point16Returned()
         {
             //arrange
             double expected = 314.16d;
