@@ -23,7 +23,7 @@
 
 Создадим таблицы:
 <pre>
-CREATE TABLE Product (
+CREATE TABLE Products (
     id INT PRIMARY KEY,
     name TEXT
 ) 
@@ -40,16 +40,16 @@ CREATE TABLE ProductsCategories (
 
 Наполним таблицы значениями:
 <pre>
-INSERT INTO Product
+INSERT INTO Products
 VALUES
-    (1, Apple),
-    (2, Koenigsegg),
-    (3, Tom)
+    (1, 'Apple'),
+    (2, 'Koenigsegg'),
+    (3, 'Tom')
 
 INSERT INTO Categories
 VALUES
-    (1, Cars),
-    (2, Books)
+    (1, 'Cars'),
+    (2, 'Books')
 
 INSERT INTO ProductsCategories
 VALUES
